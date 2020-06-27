@@ -36,24 +36,26 @@ for (const person of people) {
 
 // ---------------------------------------------------------
 
-interface Square {
-  width: number;
+type CreditCard = {
+  number: number;
+  cardholder: string;
+  expirationDate: Date;
+  secutiryCode: number;
 }
 
-interface Rectangle extends Square {
-  height: number;
+type DebitCard = {
+  number: number;
+  cardholder: string;
+  expirationDate: Date;
+  secutiryCode: number;
 }
 
-type Shape = Square | Rectangle;
+type PaymentMethod = CreditCard | DebitCard;
 
-function calculateArea(shape: Shape) {
-  if (shape instanceof Rectangle) {
-    // ~~~~~~~~~ 'Rectangle' only refers to a type,
-    //           but is being used as a value here
-    return shape.width * shape.height;
-    // ~~~~~~ Property 'height' does not exist
-    //
+function purchase(paymentMethod: PaymentMethod) {
+  if (paymentMethod instanceof CreditCard) {
+    // purchase with credit card
   } else {
-    return shape.width * shape.width;
+    // purchase with debit card
   }
 }

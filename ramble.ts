@@ -52,7 +52,7 @@ type DebitCard = {
 
 type PaymentMethod = CreditCard | DebitCard;
 
-function purchase(paymentMethod: PaymentMethod) {
+const purchase = (paymentMethod: PaymentMethod) => {
   if (paymentMethod instanceof CreditCard) {
     // purchase with credit card
   } else {

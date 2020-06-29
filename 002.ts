@@ -14,7 +14,7 @@ type People = {
   age: number;
 }
 
-const people: People = [
+const people: People[] = [
   { name: 'TK', age: 24 },
   { name: 'Kaio', age: 12 },
   { name: 'Kazumi', age: 31 },
@@ -22,5 +22,5 @@ const people: People = [
 
 for (const person of people) {
   console.log(person.agi);
-  // Property 'agi' does not exist on type '{ name: string; age: number; }'
+  // Property 'agi' does not exist on type 'People'.
 }

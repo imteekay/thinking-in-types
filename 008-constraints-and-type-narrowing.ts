@@ -49,3 +49,51 @@ function stringOrNumber(value: StringOrNumber) {
     value
   }
 }
+
+// ---------------------------------------------------------------------------------------
+
+type User = {
+  name: string;
+  address: {
+    street: string;
+    complement?: string;
+  }
+};
+
+function getComplementLength(user: User): number {
+  return user.address.complement.length;
+  // (property) complement?: string | undefined
+  // Object is possibly 'undefined'.
+}
+
+function getComplementLength(user: User) {
+  return user.address.complement?.length;
+}
+
+getComplementLength({
+  name: 'TK',
+  address: {
+    street: 'Shinjuku Avenue'
+  }
+})
+
+function getComplementLength(user: User): number {
+  return user.address.complement
+    ? user.address.complement.length
+    : 0;
+}
+
+getComplementLength({
+  name: 'TK',
+  address: {
+    street: 'Shinjuku Avenue'
+  }
+});
+
+getComplementLength({
+  name: 'TK',
+  address: {
+    street: 'Shinjuku Avenue',
+    complement: 'A complement'
+  }
+});

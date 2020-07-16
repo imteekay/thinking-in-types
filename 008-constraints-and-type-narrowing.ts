@@ -30,3 +30,22 @@ half('TK'); // Argument of type '"TK"' is not assignable to parameter of type 'n
 half({ username: 'tk' }); // Argument of type '{ username: string; }' is not assignable to parameter of type 'number'.
 half([42, 3.14]); // Argument of type 'number[]' is not assignable to parameter of type 'number'.
 half((a, b) => a + b); // Argument of type '(a: any, b: any) => any' is not assignable to parameter of type 'number'.
+
+// ---------------------------------------------------------------------------------------
+
+// type narrowing with if
+type StringOrNumber = string | number;
+
+function stringOrNumber(value: StringOrNumber) {
+  if (typeof value === 'string') {
+    // value.  -->  your ide will show you the possible methods from the string type
+    // (parameter) value: string
+    value
+  }
+
+  if (typeof value === 'number') {
+    // value.  -->  your ide will show you the possible methods from the number type
+    // (parameter) value: number
+    value
+  }
+}

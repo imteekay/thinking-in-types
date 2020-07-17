@@ -22,11 +22,11 @@ type Book = {
   price: number;
 };
 
-type Author = Readonly<{
+type Author = {
   name: string;
   email: string;
-  books: ReadonlyArray<Book>;
-}>;
+  books: Book[];
+};
 
 const author: Author = {
   name: 'Walter Isaacson',

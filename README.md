@@ -1,1 +1,2 @@
-# thinking-in-types
+# Thinking in Types
+Examples to build a mental models for types

@@ -1,5 +1,5 @@
 # Thinking in Types
-Examples to build a mental models for types
+Typescript examples to build a mental model for types
 
 - [001: Javascript Types](https://github.com/leandrotk/thinking-in-types/blob/master/001-javascript-types.ts)
 - [002: Simple Sum](https://github.com/leandrotk/thinking-in-types/blob/master/002-simple-sum.ts)

@@ -1,5 +1,8 @@
 # Thinking in Types
-Typescript examples to build a mental model for types
+
+This is the source code for the article [A Mental Model to think in Typescript](https://leandrotk.github.io/tk/2020/07/a-mental-model-to-think-in-typescript/index.html).
+
+Follow these examples to build a mental model for types:
 
 - [001: Javascript Types](https://github.com/leandrotk/thinking-in-types/blob/master/001-javascript-types.ts)
 - [002: Simple Sum](https://github.com/leandrotk/thinking-in-types/blob/master/002-simple-sum.ts)

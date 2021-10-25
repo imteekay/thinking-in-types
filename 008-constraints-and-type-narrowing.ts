@@ -9,7 +9,7 @@ const untypedHalf = (x) => x / 2;
   { username: 'tk' },
   [42, 3.14],
   (a, b) => a + b,
-]
+];
 
 untypedHalf(null); // 0
 untypedHalf(undefined); // NaN
@@ -40,13 +40,13 @@ function stringOrNumber(value: StringOrNumber) {
   if (typeof value === 'string') {
     // value.  -->  your ide will show you the possible methods from the string type
     // (parameter) value: string
-    value
+    value;
   }
 
   if (typeof value === 'number') {
     // value.  -->  your ide will show you the possible methods from the number type
     // (parameter) value: number
-    value
+    value;
   }
 }
 
@@ -57,7 +57,7 @@ type User = {
   address: {
     street: string;
     complement?: string;
-  }
+  };
 };
 
 function getComplementLength(user: User): number {
@@ -73,27 +73,25 @@ function getComplementLength(user: User) {
 getComplementLength({
   name: 'TK',
   address: {
-    street: 'Shinjuku Avenue'
-  }
-})
+    street: 'Shinjuku Avenue',
+  },
+});
 
 function getComplementLength(user: User): number {
-  return user.address.complement
-    ? user.address.complement.length
-    : 0;
+  return user.address.complement ? user.address.complement.length : 0;
 }
 
 getComplementLength({
   name: 'TK',
   address: {
-    street: 'Shinjuku Avenue'
-  }
+    street: 'Shinjuku Avenue',
+  },
 });
 
 getComplementLength({
   name: 'TK',
   address: {
     street: 'Shinjuku Avenue',
-    complement: 'A complement'
-  }
+    complement: 'A complement',
+  },
 });

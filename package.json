@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Examples to build a mental models for types",
   "scripts": {
-    "start": "ts-node"
+    "start": "ts-node",
+    "format:check": "prettier -c '**/*.ts'",
+    "format:write": "prettier -w '**/*.ts'"
   },
   "repository": {
     "type": "git",
@@ -15,6 +17,7 @@
   "author": "TK",
   "license": "MIT",
   "devDependencies": {
+    "prettier": "^2.4.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.7"
   }

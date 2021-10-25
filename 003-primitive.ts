@@ -4,7 +4,7 @@ const username: string = 'tk';
 
 // Can't assign different types
 const name: string = 2; // Type '2' is not assignable to type 'string'.
-const number: number = 'name' // Type '"name"' is not assignable to type 'number'.
+const number: number = 'name'; // Type '"name"' is not assignable to type 'number'.
 
 // Can't use different types for math operations
 '2' * '2';

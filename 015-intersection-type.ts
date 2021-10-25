@@ -4,7 +4,7 @@ type ImageUrl = {
 
 type ImageAttr = {
   imageAlt: string;
-  width?: string
+  width?: string;
 };
 
 type ImageProps = ImageUrl & ImageAttr;
@@ -12,7 +12,7 @@ type ImageProps = ImageUrl & ImageAttr;
 type ImageProps = {
   imageUrl: string;
   imageAlt: string;
-  width?: string
+  width?: string;
 };
 
 const imageProps: ImageProps = {
@@ -23,5 +23,5 @@ const imageProps: ImageProps = {
 const imageProps: ImageProps = {
   imageUrl: 'www.image.com',
   imageAlt: 'an image',
-  width: '100%'
+  width: '100%',
 };

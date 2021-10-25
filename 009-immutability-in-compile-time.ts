@@ -1,7 +1,7 @@
 let email = 'harry.potter@mail.com';
-email // 'harry.potter@mail.com'
+email; // 'harry.potter@mail.com'
 email = 'hermione.granger@mail.com';
-email // 'hermione.granger@mail.com'
+email; // 'hermione.granger@mail.com'
 
 // --------------------------------------------------------
 
@@ -29,16 +29,15 @@ const mutableAuthor = {
   books: [
     {
       title: 'Leonardo Da Vinci',
-      price: 50.00,
-    }
-  ]
+      price: 50.0,
+    },
+  ],
 };
 
 mutableAuthor.books.push({
   title: 'Steve Jobs',
-  price: 10.00
+  price: 10.0,
 });
-
 
 const author = {
   name: 'Walter Isaacson',
@@ -46,14 +45,14 @@ const author = {
   books: [
     {
       title: 'Leonardo Da Vinci',
-      price: 50.00,
-    }
-  ]
+      price: 50.0,
+    },
+  ],
 } as const;
 
 author.books.push({
   title: 'Steve Jobs',
-  price: 10.00
+  price: 10.0,
 });
 
 // --------------------------------------------------------
@@ -75,14 +74,14 @@ const author: Author = {
   books: [
     {
       title: 'Leonardo Da Vinci',
-      price: 50.00,
-    }
-  ]
+      price: 50.0,
+    },
+  ],
 };
 
 const book: Book = {
   title: 'Steve Jobs',
-  price: 30
+  price: 30,
 };
 
 author.name = 'TK';

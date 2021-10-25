@@ -19,7 +19,7 @@ for (const person of people) {
 type People = {
   name: string;
   age: number;
-}
+};
 
 const people: People[] = [
   { name: 'TK', age: 24 },
@@ -36,7 +36,7 @@ for (const person of people) {
 
 type SnackbarStatus = {
   isClosed: boolean;
-}
+};
 
 const buildSnackbar = (status: SnackbarStatus) => {
   if (status.isClosed) {
@@ -48,7 +48,3 @@ buildSnackbar({ isclosed: true });
 // Object literal may only specify known properties,
 // but 'isclosed' does not exist in type 'SnackbarStatus'.
 // Did you mean to write 'isClosed'?
-
-// --------------------------------------------------
-
-'TK'.

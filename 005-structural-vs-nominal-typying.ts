@@ -1,4 +1,4 @@
-// Nominal Type System: Java code
+/*** Nominal Type System: Java code
 class JavaPerson {
   String name;
 }
@@ -9,6 +9,7 @@ class JavaClient {
 
 JavaClient c = new JavaPerson();  // compiler throws an error
 JavaClient c = new JavaClient();  // OK!
+***/
 
 // --------------------------------------------------
 
@@ -23,16 +24,15 @@ class Client {
 
 const c1: Client = new Person(); // OK!
 const c2: Client = new Client(); // OK!
-const c3: Client = {             // OK!
-  name: 'TK'
+const c3: Client = {
+  // OK!
+  name: 'TK',
 };
 
 class Customer {
   name: string;
   age: number;
-};
+}
 
 const c4: Customer = new Client();
 const c5: Client = new Customer();
-
-

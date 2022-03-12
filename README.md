@@ -4,7 +4,7 @@ This is the source code for the article [A Mental Model to think in Typescript](
 
 Follow these examples to build a mental model for types:
 
-- [001: Javascript Types](src/001-javascript-types.ts)
+- [001: JavaScript Types](src/001-javascript-types.ts)
 - [002: Simple Sum](src/002-simple-sum.ts)
 - [003: Primitive](src/003-primitive.ts)
 - [004: Sum all prices](src/004-sum-all-prices.ts)
